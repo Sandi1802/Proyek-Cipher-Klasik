@@ -9,4 +9,5 @@ def caesar_encrypt(text, shift):
     return result
 
 # Contoh penggunaan:
-print(caesar_encrypt('HELLO', 3))  # Output: KHOOR
+if __name__ == "__main__":
+    print(caesar_encrypt('HELLO', 3))  # Output: KHOOR

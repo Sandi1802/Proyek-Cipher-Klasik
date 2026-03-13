@@ -8,4 +8,5 @@ def affine_encrypt(text, a, b):
     return result
 
 # Contoh penggunaan:
-print(affine_encrypt('HELLO', 5, 8))  # Output: RCLLA
+if __name__ == "__main__":
+    print(affine_encrypt('HELLO', 5, 8))  # Output: RCLLA
