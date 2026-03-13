@@ -35,15 +35,16 @@ def frequency_analysis(text):
         print(f"{char}: {count} ({count/total:.2%})")
 
 # Contoh penggunaan
-plaintext = "KRIPTOGRAFI ADALAH ILMU KEAMANAN INFORMASI"
-key = "RAHASIA"
+if __name__ == "__main__":
+    plaintext = "KRIPTOGRAFI ADALAH ILMU KEAMANAN INFORMASI"
+    key = "RAHASIA"
 
-ciphertext = vigenere_encrypt(plaintext, key)
-decrypted = vigenere_decrypt(ciphertext, key)
+    ciphertext = vigenere_encrypt(plaintext, key)
+    decrypted = vigenere_decrypt(ciphertext, key)
 
-print("Plaintext :", plaintext)
-print("Kunci     :", key)
-print("Ciphertext:", ciphertext)
-print("Dekripsi  :", decrypted)
-print()
-frequency_analysis(ciphertext)
+    print("Plaintext :", plaintext)
+    print("Kunci     :", key)
+    print("Ciphertext:", ciphertext)
+    print("Dekripsi  :", decrypted)
+    print()
+    frequency_analysis(ciphertext)
